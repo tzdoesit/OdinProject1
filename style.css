@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,100;1,200;1,300;1,600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
+/* Header */
 nav {
     height: 80px;
     background: greenyellow;
@@ -32,6 +34,7 @@ nav a {
     padding: 0 1rem;
 }
 
+/* Hero */
 .column-left {
     display: flex;
     justify-content: center;
@@ -73,7 +76,20 @@ button:hover {
     height: 100%;
 }
 
+/* Testimonials */
+.testimonial {
+    font-family: 'Raleway', sans-serif;
+    background: lightgrey;
+    padding: 3rem 0 3rem 0;
+    font-style: italic;
+    
+}
 
+.testimonial h1 {
+    font-weight: normal;
+}
+
+/* Make mobile phone compatible */
 @media screen and (max-width: 768px) {
     .hero-container {
         grid-template-columns: 1fr;
